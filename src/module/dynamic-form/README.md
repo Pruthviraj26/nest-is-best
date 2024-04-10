@@ -25,6 +25,8 @@
     /fill-form?title={title} - Post request to insert data to the form given in query parameter title.
     /get-data - Get request to get all inserted form given in query parameter title.
 
+![img.png](img.png)
+![img_1.png](img_1.png)
 ## Service (Form Service)
     Provides basic functions like createFormAndFields, fillFormData, findFormData, transformData
 
@@ -46,5 +48,4 @@
 ## Design patterns
     MVC with service, repository and dto.
 
-## Other
-    Use nest-events
+## Scalablity
