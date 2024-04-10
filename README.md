@@ -22,8 +22,93 @@
 
 ## End Points (Form Controller functions)
     /create-form - Post request to create form and form fields
+        example:
+        Url : localhost:3000/api/v1/form/create-form
+        Body : {
+                    "title":"user",
+                    "first_name": "string",
+                    "last_name": "string",
+                    "age": "number"
+                }
+        Response :
+        {
+            "statusCode": 201,
+            "message": "Form created successfully",
+            "data": {
+                "form": {
+                    "id": 1,
+                    "title": "user",
+                    "createdAt": "2024-04-10T12:26:39.000Z",
+                    "updatedAt": "2024-04-10T12:26:39.000Z",
+                    "formFields": [
+                        {
+                            "id": 1,
+                            "formId": 1,
+                            "fieldName": "first_name",
+                            "fieldType": "string",
+                            "createdAt": "2024-04-10T12:26:39.000Z",
+                            "updatedAt": "2024-04-10T12:26:39.000Z"
+                        },
+                        {
+                            "id": 2,
+                            "formId": 1,
+                            "fieldName": "last_name",
+                            "fieldType": "string",
+                            "createdAt": "2024-04-10T12:26:39.000Z",
+                            "updatedAt": "2024-04-10T12:26:39.000Z"
+                        },
+                        {
+                            "id": 3,
+                            "formId": 1,
+                            "fieldName": "age",
+                            "fieldType": "number",
+                            "createdAt": "2024-04-10T12:26:39.000Z",
+                            "updatedAt": "2024-04-10T12:26:39.000Z"
+                        }
+                    ]
+                }
+            }
+        }
+
     /fill-form?title={title} - Post request to insert data to the form given in query parameter title.
+    POST url: localhost:3000/api/v1/form/fill-form?title=user
+    Body : 
+    {
+        "first_name": "pruthvi",
+        "last_name": "rathod",
+        "age": 10
+    }
+    Reponse : 
+    {
+        "statusCode": 200,
+        "message": "Form data filled successfully",
+        "data": {
+        "bcecb6a7-34c3-4725-943f-061f988c0af4": {
+        "first_name": "pruthvi",
+        "last_name": "rathod",
+        "age": "10"
+            }
+        }
+    }
+
     /get-data - Get request to get all inserted form given in query parameter title.
+    GET url : localhost:3000/api/v1/form/get-data?title=user
+    {
+        "statusCode": 200,
+        "message": "Form data fetched successfully",
+        "data": {
+            "bcecb6a7-34c3-4725-943f-061f988c0af4": {
+                "first_name": "pruthvi",
+                "last_name": "rathod",
+                "age": "10"
+            },
+            "a2d15bd4-ba62-495c-9f1f-c0cc111e2cbf": {
+                "first_name": "raj",
+                "last_name": "rathod",
+                "age": "10"
+            }
+        }
+    }
 
 ## Service (Form Service)
     Provides basic functions like createFormAndFields, fillFormData, findFormData, transformData
