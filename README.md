@@ -2,7 +2,7 @@
 
 ## Dynamic Form Module
     - Purpose of dynamic form with dynamic fields. And also insert and retrive form data
-    - Module is created in based on boilerplate project and following naming conventions and standards.
+    - Module is created in based on boilerplate project and followed naming conventions and standards as per boilerplate projects.
     
 ## Basic Objectives of Modules:
     - Create dynamic form having title of form and dynamic fields given in bodydata
