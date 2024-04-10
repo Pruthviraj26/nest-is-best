@@ -13,6 +13,7 @@
     - npm ci
     - npm install -g win-node-env
     - docker-compose -f .\docker-compose.local.yml up -d
+    - Create mydb database as defined in .env.development
     - npm run start:dev
 
 ## Entities
