@@ -9,7 +9,7 @@
     - Insert form data, body has form data and in query string title of form
     - Get all insert data fetch by title
 
-## Setup for development:
+## How to run:
     - npm ci
     - npm install -g win-node-env
     - docker-compose -f .\docker-compose.local.yml up -d
