@@ -20,6 +20,9 @@
      FormField - stores id, formId and fieldName and fieldType
      FormData - stores uniqueId, formId, formFieldId and fieldValue
 
+     ![image](https://github.com/Pruthviraj26/nest-is-best/assets/10598434/bfce2637-aa6b-448d-b3e0-dd8623ba716e)
+
+
 ## End Points (Form Controller functions)
     /create-form - Post request to create form and form fields
         example:
