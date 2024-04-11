@@ -4,9 +4,10 @@ Please make sure you have the required softwares and configuration done before c
 
 Make sure you have the below application installed
 
-Visual Studio Code
-Node.js (v20 LTS)
-Postman
+- Visual Studio Code
+- Node.js (v20 LTS)
+- Postman
+- Docker desktop
 
 ## Dynamic Form Module
     - Purpose of dynamic form with dynamic fields. And also insert and retrive form data
