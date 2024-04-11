@@ -1,4 +1,12 @@
 
+## Prerequisites
+Please make sure you have the required softwares and configuration done before cloning the repository
+
+Make sure you have the below application installed
+
+Visual Studio Code
+Node.js (v20 LTS)
+Postman
 
 ## Dynamic Form Module
     - Purpose of dynamic form with dynamic fields. And also insert and retrive form data
